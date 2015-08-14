@@ -1,0 +1,30 @@
+.grid
+{
+  display: inline-block;
+  width: 350px;
+}
+
+/*this is the horizontal lines:*/
+.h_line
+{ 
+  display: inline-block;
+  width:100px; 
+  height:10px; 
+  background: #fff; 
+  margin-top: 100px;
+
+}
+
+/*these are the vertial lines:*/
+.v_line
+{
+  display: inline-block;
+  border-left: 10px solid white ;
+  margin: 0 auto;
+  height: 100px;
+}
+
+
+body {
+  background: blue;
+}

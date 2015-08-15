@@ -1,11 +1,37 @@
+
 .grid
 {
   display: inline-block;
   width: 350px;
 }
 
-/*this is the horizontal lines:*/
-.h_line
+.gridTop
+{
+  display: inline-block;
+  width: 350px;
+}
+.gridMiddle
+{
+  display: inline-block;
+  width: 350px;
+  margin-top: -20px;
+}
+
+.gridBottom
+{
+  display: inline-block;
+  width: 350px;
+  margin-top: -20px;
+}
+
+.gridSpace
+{ 
+  display: inline-block;
+  width: 100px;
+  height: 110px;
+}
+
+.h_line /*this is the horizontal lines that make up the grid:*/
 { 
   display: inline-block;
   width:100px; 

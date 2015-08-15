@@ -1,4 +1,9 @@
 
+.gridContainer
+{
+  text-align: center
+}
+
 .grid
 {
   display: inline-block;
@@ -24,20 +29,19 @@
   margin-top: -20px;
 }
 
-.gridSpace
+.gridSpace1, .gridSpace2, .gridSpace3
 { 
   display: inline-block;
   width: 100px;
   height: 110px;
 }
 
-.h_line /*this is the horizontal lines that make up the grid:*/
+.h_line1, .h_line2, .h_line3, .h_line4, .h_line5, .h_line6  /*this is the horizontal lines that make up the grid:*/
 { 
   display: inline-block;
   width:100px; 
-  height:10px; 
-  background: #fff; 
-  margin-top: 100px;
+  height:100px;  
+  border-bottom: 10px solid white;
 
 }
 

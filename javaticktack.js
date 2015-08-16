@@ -71,6 +71,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line1')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought1')[0].style.display="block";
@@ -81,6 +82,8 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('h_line1')[0].style.pointerEvents="none";
+      
   }
   })
 
@@ -93,6 +96,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line2')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought2')[0].style.display="block";
@@ -102,7 +106,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
-
+      document.getElementsByClassName('h_line2')[0].style.pointerEvents="none";//this bit means it wont be clickable afterwards
   }
 
   })
@@ -117,6 +121,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line3')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought3')[0].style.display="block";
@@ -127,6 +132,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('h_line3')[0].style.pointerEvents="none";
   }
   })
 
@@ -139,6 +145,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line4')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought4')[0].style.display="block";
@@ -148,6 +155,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('h_line4')[0].style.pointerEvents="none";
   }
 })
     boxesArray[4].addEventListener("click", function(){
@@ -161,6 +169,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line5')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought5')[0].style.display="block";
@@ -172,6 +181,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line5')[0].style.pointerEvents="none";
   }
   })
     boxesArray[5].addEventListener("click", function(){
@@ -183,6 +193,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('h_line6')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought6')[0].style.display="block";
@@ -192,6 +203,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame(); 
+      document.getElementsByClassName('h_line6')[0].style.pointerEvents="none";
   }
   })
     boxesArray[6].addEventListener("click", function(){
@@ -204,6 +216,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('gridSpace1')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought7')[0].style.display="block";
@@ -214,6 +227,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('gridSpace1')[0].style.pointerEvents="none";
   }
   })
     boxesArray[7].addEventListener("click", function(){
@@ -225,6 +239,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('gridSpace2')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought8')[0].style.display="block";
@@ -234,6 +249,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('gridSpace2')[0].style.pointerEvents="none";
   }
   })
     boxesArray[8].addEventListener("click", function(){
@@ -246,6 +262,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
     filled = filled + 1
     whoWon();
     drawGame();
+    document.getElementsByClassName('gridSpace3')[0].style.pointerEvents="none";
   }
     else {
       document.getElementsByClassName('nought9')[0].style.display="block";
@@ -256,6 +273,7 @@ boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of 
       filled = filled + 1
       whoWon();
       drawGame();
+      document.getElementsByClassName('gridSpace3')[0].style.pointerEvents="none";
   }
   })
 

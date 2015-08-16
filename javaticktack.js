@@ -35,8 +35,10 @@ var Column3 = 0
 var Diag1 = 0 //the diagonals
 var Diag2 = 0
 var filled = 0 //has the box been filled?
+var noughtScore = 0
+var crossScore = 0
 
-//the below var tells it to check after each move whether there's been a winner or not.
+//the below var tells it to check after each move whether there's been a winner or not. crosses go into positive units, noughts into negative.
 var whoWon = (function () {
 if (Row1 == 3 || Row2 == 3 || Row3 == 3 || Column1 ==3 ||Column2 ==3 || Column3 == 3 || Diag1 == 3 || Diag2 ==3) {
   alert("Player 1 wins!");
@@ -48,7 +50,7 @@ if (Row1 == 3 || Row2 == 3 || Row3 == 3 || Column1 ==3 ||Column2 ==3 || Column3 
 )
 
 var drawGame = (function() {
-  if (filled == 9) {
+  if (filled == 9 && Row1 < 3 && Row1 > -3 && Row2 < 3 && Row2 > -3 && Row3 < 3 && Row3 > -3 && Column1 < 3 && Column1 > -3 && Column2 < 3 && Column2 > -3 && Column3 < 3 && Column3 > -3 && Diag1 < 3 && Diag1 > -3 && Diag2 < 3 && Diag2 > -3) { 
     alert("It's a draw!");
   }
 }

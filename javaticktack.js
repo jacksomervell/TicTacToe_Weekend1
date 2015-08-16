@@ -16,30 +16,162 @@ var box5 = box5[0];
 var box6 = document.getElementsByClassName('h_line6')
 var box6 = box6[0];
 
-var box7 = document.getElementsByClassName('h_line7')
+var box7 = document.getElementsByClassName('gridSpace1')
 var box7 = box7[0];
 
-var box8 = document.getElementsByClassName('h_line8')
+var box8 = document.getElementsByClassName('gridSpace2')
 var box8 = box8[0];
 
-var box9 = document.getElementsByClassName('h_line9')
+var box9 = document.getElementsByClassName('gridSpace3')
 var box9 = box9[0];
+
+var turn = 0
+var Row1 = 0
+var Row2 = 0
+var Row3 = 0
+var Column1 = 0
+var Column2 = 0
+var Column3 = 0
+var Diag1 = 0
+var Diag2 = 0
+
+var whoWon = (function () {
+if (Row1 == 3) {
+  console.log ("Player 1 wins!");
+} else if (Row1 == -3) {
+  console.log ("Player 2 wins!")
+}
+  else console.log ("It's a draw!");
+}
+)
 
 boxesArray = [box1, box2, box3, box4, box5, box6, box7, box8, box9]; //array of all the spaces on the grid
 
-var turn = 1
 
-// while (turn<10){
+
+// for (i = 0, arrayLength = boxesArray.length; i < arrayLength; i++){
   boxesArray[0].addEventListener("click", function(){
     if (turn % 2 === 0){
     document.getElementsByClassName('cross1')[0].style.display="block";
+    turn = turn + 1;
+    Row1 = Row1 + 1;
+    Column1 = Column1 + 1;
+    Diag1 = Diag1 + 1;
+    whoWon();
   }
     else {
       document.getElementsByClassName('nought1')[0].style.display="block";
+      turn = turn + 1;
+      Row1 = Row1 - 1;
+      Column1 = Column1 - 1;
+      Diag1 = Diag1 - 1;
   }
-      // turn = turn+1;
   })
 
+  boxesArray[1].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross2')[0].style.display="block";
+    turn = turn + 1;
+    Row1 = Row1 + 1;
+    Column2 = Column2 + 1;
+    whoWon();
+  }
+    else {
+      document.getElementsByClassName('nought2')[0].style.display="block";
+      turn = turn + 1;
+      Row1 = Row1 - 1;
+      Column2 = Column2 - 1;
+      whoWon()
+  }
+
+  })
+
+  boxesArray[2].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross3')[0].style.display="block";
+    turn = turn + 1;
+    Row1 = Row1 + 1;
+    Column3 = Column3 + 1;
+    Diag2 = Diag2 + 1;
+    whoWon();
+  }
+    else {
+      document.getElementsByClassName('nought3')[0].style.display="block";
+      turn = turn + 1;
+      Row1 = Row1 - 1;
+    Column3 = Column3 - 1;
+    Diag2 = Diag2 - 1;
+  }
+  })
+
+    boxesArray[3].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross4')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought4')[0].style.display="block";
+      turn = turn + 1;
+  }
+})
+    boxesArray[4].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross5')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought5')[0].style.display="block";
+      turn = turn + 1;
+  }
+  })
+    boxesArray[5].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross6')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought6')[0].style.display="block";
+      turn = turn + 1;
+  }
+  })
+    boxesArray[6].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross7')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought7')[0].style.display="block";
+      turn = turn + 1;
+  }
+  })
+    boxesArray[7].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross8')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought8')[0].style.display="block";
+      turn = turn + 1;
+  }
+  })
+    boxesArray[8].addEventListener("click", function(){
+    if (turn % 2 === 0){
+    document.getElementsByClassName('cross9')[0].style.display="block";
+    turn = turn + 1;
+  }
+    else {
+      document.getElementsByClassName('nought9')[0].style.display="block";
+      turn = turn + 1;
+  }
+  })
+
+
+
+// if (box1Score === "x" && box2Score === "x" && box3Score === "x") {
+//   alert:"Player 1 wins";
+// }
+
+//need 
 
 // function showCross() {
 //    document.getElementById('cross1').style.display = "block";

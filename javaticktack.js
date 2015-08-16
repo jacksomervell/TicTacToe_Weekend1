@@ -41,9 +41,11 @@ var crossScore = 0
 //the below var tells it to check after each move whether there's been a winner or not. crosses go into positive units, noughts into negative.
 var whoWon = (function () {
 if (Row1 == 3 || Row2 == 3 || Row3 == 3 || Column1 ==3 ||Column2 ==3 || Column3 == 3 || Diag1 == 3 || Diag2 ==3) {
-  alert("Player 1 wins!");
+  alert("Player 1 wins!")
+  document.getElementsByClassName('grid')[0].style.pointerEvents="none";//this freezes everything once the game is over.;
 } else if (Row1 == -3 || Row2 == -3 || Row3 == -3 || Column1 == -3 ||Column2 == -3 || Column3 == -3 || Diag1 == -3 || Diag2 == -3)  {
-  alert("Player 2 wins!")
+  alert("Player 2 wins!");
+  document.getElementsByClassName('grid')[0].style.pointerEvents="none";//this freezes everything once the game is over.
 }
   else console.log ("No winner yet!");
 }
@@ -52,6 +54,7 @@ if (Row1 == 3 || Row2 == 3 || Row3 == 3 || Column1 ==3 ||Column2 ==3 || Column3 
 var drawGame = (function() {
   if (filled == 9 && Row1 < 3 && Row1 > -3 && Row2 < 3 && Row2 > -3 && Row3 < 3 && Row3 > -3 && Column1 < 3 && Column1 > -3 && Column2 < 3 && Column2 > -3 && Column3 < 3 && Column3 > -3 && Diag1 < 3 && Diag1 > -3 && Diag2 < 3 && Diag2 > -3) { 
     alert("It's a draw!");
+    document.getElementsByClassName('grid')[0].style.pointerEvents="none";//this freezes everything once the game is over.
   }
 }
   )
